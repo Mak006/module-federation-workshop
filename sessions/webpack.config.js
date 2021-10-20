@@ -14,8 +14,9 @@ module.exports = {
       name: "sessions",
       filename: "remoteEntry.js",
       exposes: {
-        "./App": "./src/index.js",
+        "./App": "./src/bootstrap",
       },
+      shared: ["txtgen"],
     }),
   ],
 };
